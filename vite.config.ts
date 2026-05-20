@@ -12,4 +12,14 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+
+  vite: {
+    preview: {
+      host: "0.0.0.0",
+      port: 3000,
+      allowedHosts: [
+        "banco-de-dados-bancodedados.mxor6u.easypanel.host",
+      ],
+    },
+  },
 });
